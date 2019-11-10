@@ -1,0 +1,53 @@
+@media screen and (max-width: 600px) {
+    #header a {
+        font-size: 0.4em;
+    }
+
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature .content {
+        padding: 1em;
+        font-size: 0.8em;
+    }
+
+    .contact-form form {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact-form .contact-name {
+        height: 3em;
+        margin: 0.5em 0.2em 0.2em 0.5em;
+    }
+    
+    .contact-form .contact-email {
+        height: 3em;
+        margin: 0.5em 0.5em 0.2em 0.2em;
+    }
+
+    .contact-form textarea {
+        margin: 0.5em;
+    }
+
+    .contact-form .submit {
+        width: 20%;
+        margin: 0.5em 1em 0.5em auto;
+    }
+
+    .contact-form .reset {
+        width: 20%;
+        margin: 0.5em auto 1em 0.5em;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .image-grid .image {
+        width: 80%;
+    }
+}
