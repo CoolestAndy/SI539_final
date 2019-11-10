@@ -4,7 +4,73 @@
 		<title>Travel in America</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
+		
+		<link rel="stylesheet" href="assets/css/style.css" /> 
+		<style>
+		/* body */
+			body {
+				display: block;
+				margin: 0 auto;
+			}
+
+		/* nav */
+			#header{
+				background-color:#EEE; 
+				display: flex;
+				flex-direction: row;
+				align-content: center;
+			}
+			
+			#header a {
+				transition: color 0.2s ease-in-out;
+				display: inline-block;
+				margin-right: 1em;
+				text-decoration: none;
+				
+			}
+
+			h1{
+				font-size: 1.2em;
+				top: 0em;
+				left:10px;
+			}
+
+			h3{
+				font-size: 1.2em;
+				top: 0em;
+				right:10px;
+				margin-left: auto;
+			}
+
+		/* banner */
+			#banner{
+				background-image: url(images/banner.jpg);
+				background-attachment: fixed;
+				background-size: cover;
+    			text-align: center;
+				padding: 10em 0 7em 0;
+				vertical-align: baseline;
+			}
+
+			#banner h2 {
+				font-size: 2.5em;
+				margin: 0 0 0.5em 0;
+				padding: 0;
+				
+			}
+			/* .wrapper.newyork{
+				color:#EEE
+			}
+			
+			.wrapper{
+				padding: 6em 0 4em 0;
+			
+			} */
+
+
+		
+		</style>
 	</head>
 	<body  class="landing">
 			<header id="header" class="alt">
@@ -27,14 +93,14 @@
 			<section id="one" class="wrapper style1">
 				<div class="inner">
 					<article class="feature left">
-						<span class="image"><img src="images/1.jpg" alt="" /></span>
+						<span class="image"><img src="images/1.jpg" alt="1.jpg" /></span>
 						<div class="content">
 							<p>"When we first dropped our bags on apartment floors<br />
-							   Took our broken hearts, put them in a drawer<br />
-							   Everybody here was someone else before<br />
-							   And you can want who you want<br />
-							   Boys and boys and girls and girls<br />
-							   Welcome to New York"<br />
+							Took our broken hearts, put them in a drawer<br />
+							Everybody here was someone else before<br />
+							And you can want who you want<br />
+							Boys and boys and girls and girls<br />
+							Welcome to New York"<br />
 							   <br />
 							   Taylor Swift<br />
 								</p>
@@ -46,7 +112,7 @@
 						</div>
 					</article>
 					<article class="feature right">
-						<span class="image"><img src="images/2.jpg" alt="" /></span>
+						<span class="image"><img src="images/2.jpg" alt="2.jpg" /></span>
 						<div class="content">
 							<p>"Party in the city where the heat is on<br />
 							   All night, on the beach till the break of dawn<br />
@@ -70,14 +136,14 @@
 						<h2>Picture Gallery</h2>
 					</header>
 					<div class="image-grid">
-						<a href="#" class="image"><img src="images/3.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/4.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/5.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/6.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/7.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/8.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/9.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="images/10.jpg" alt="" /></a>
+						<span class="image"><img src="images/3.jpg" alt="3.jpg" /></span>
+						<span class="image"><img src="images/4.jpg" alt="4.jpg" /></span>
+						<span class="image"><img src="images/5.jpg" alt="5.jpg" /></span>
+						<span class="image"><img src="images/6.jpg" alt="6.jpg" /></span>
+						<span class="image"><img src="images/7.jpg" alt="7.jpg" /></span>
+						<span class="image"><img src="images/8.jpg" alt="8.jpg" /></span>
+						<span class="image"><img src="images/9.jpg" alt="9.jpg" /></span>
+						<span class="image"><img src="images/10.jpg" alt="10.jpg" /></span>
 					</div>
 					<ul class="actions">
 						<li><a href="gallery.html" class="button big alt">More</a></li>
@@ -92,14 +158,14 @@
 					</header>
 					<form action="#" method="POST">
 						<div class="container 75%">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
+							<div class="contact-form row uniform 50%">
+								<div class="contact-name">
 									<input name="name" placeholder="Name" type="text" />
 								</div>
-								<div class="6u$ 12u$(xsmall)">
+								<div class="contact-email">
 									<input name="email" placeholder="Email" type="email" />
 								</div>
-								<div class="12u$">
+								<div class="contact-message">
 									<textarea name="message" placeholder="Message" rows="4"></textarea>
 								</div>
 							</div>
@@ -115,17 +181,14 @@
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="www.baidu.com"><span class="label">Facebook<i class="fab fa-facebook-f"></i></a>
+						<li><a href="https://www.facebook.com/profile.php?id=100028436913274"><span class="label"><i class="fab fa-facebook-f"></i></a>
 							</span>
 						</li>
-						<li><a href="#" class="icon fa-twitter">
-							<span class="label">Twitter</span>
-						</a></li>
-						<li><a href="#" class="icon fa-instagram">
-							<span class="label">Instagram</span>
-						</a></li>
-						<li><a href="#" class="icon fa-linkedin">
-							<span class="label">LinkedIn</span>
+						<li><a href="https://github.com/CoolestAndy"><span class="label"><i class="fab fa-github"></i></a>
+							</span>
+						</li>
+						<li><a href="https://www.linkedin.com/in/boyang-zhang-8182b7170/"><span class="label"><i class="fab fa-linkedin-in"></i></a>
+							</span>
 						</a></li>
 					</ul>
 				</div>
