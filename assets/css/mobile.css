@@ -1,11 +1,44 @@
-@media screen and (max-width: 600px) {
-    #header a {
-        font-size: 0.4em;
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #header {
+        grid-template-columns: auto auto auto auto;
+        padding: 1em 1em;
     }
 
+    #header a:first-child {
+        display: none;
+    }
 
+    #header a {
+        text-align: center;
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+    #header {
+        grid-template-columns: auto auto auto auto;
+        padding: 1em 1em;
+    }
+
+    #header a:first-child {
+        display: none;
+    }
+
+    #header a {
+        text-align: center;
+        font-size: 0.5em;
+        padding: 0;
+    }
+
+    #banner {
+        background-size: cover;
+        background-position-x: 50%;
+    }
     .feature {
         grid-template-columns: 1fr;
+        padding:2em;
+        margin:0em;
     }
 
     .feature .content {
@@ -43,6 +76,10 @@
         margin: 0.5em auto 1em 0.5em;
     }
 
+    .flip-card{
+        width: 295px;
+        height: 220px;
+    }
     .image-grid {
         flex-direction: column;
     }
@@ -50,4 +87,9 @@
     .image-grid .image {
         width: 80%;
     }
+    /* .wrapper .container p{
+        margin:1em 3em;
+        border: 2px solid rgb(240, 200, 155);
+        background-color: #EEE;
+    } */
 }
